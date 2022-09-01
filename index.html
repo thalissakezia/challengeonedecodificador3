@@ -1,15 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <title>Cursos da Alura</title>
-</head>
-<body>
-    <ul>
-        <li>Vagrant</li>
-        <li>Docker</li>
-        <li>Ansible</li>
-        <li>Integração Continua</li>
-    </ul>
-</body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/icon/icon.png" type="image/x-icon">
+    <title>D_Codifique</title>
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+  </head>
+  <body>
+    <!--CABECALHO-->
+    <div class="container">
+      <header class="logo animada">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+        <lottie-player id="eleventhLottie" src="https://assets10.lottiefiles.com/animated_stickers/lf_tgs_YT9mov.json" style="width:80px; height: 80px;">"></lottie-player>
+            <script>
+            LottieInteractivity.create({
+                player:'#eleventhLottie',
+                mode:"cursor",
+                actions: [
+                    {
+                        type: "hover",
+                        forceFlag: false
+                    }
+                ]
+            });
+            </script>
+      </header>
+
+    <!--CONTEUDO PRINCIPAL-->    
+      <main>
+        <div class="main-container">
+          
+          <section class="user-text">
+            <textarea autofocus minlength="5" class="user-textin" name="user-textin" id="user-textin" placeholder="Digite seu texto"></textarea>
+          </section>
+
+          <section class="textout-card" id="textout-card">
+            <div class="textout">
+              <textarea disabled class="textout__parag" name="textout__parag" id="textout__parag"></textarea>
+              <div class="no-text" id="no-text">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets8.lottiefiles.com/animated_stickers/lf_tgs_kSLxy8.json"   background="transparent"  speed="1" style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
+                
+
+                <h2 class="no-text__title">Nenhuma mensagem encontrada</h2>
+                <p class="no-text__parag"> Digite um texto que você deseja criptografar ou descriptografar.<p>
+              </div>
+            </div>
+          </section>
+
+          <section class="btns-container">
+            <div class="info"><img class="icon" src="./assets/icon/exclamation-circle.svg" alt="">
+              <span>Apenas letras minúsculas e sem acento.</span>
+            </div>
+
+            <div class="btns">
+              <button class="btn-cript" id="btn-cript">Criptografar</button>
+              <button class="btn-decript" id="btn-decript">Descriptografar</button>
+            </div>
+          </section>
+
+          <section class="copy-container" id="copy-container">
+            <button class="btn-copy" id="btn-copy">Copiar</button>
+          </section>
+        </div>
+      </main>
+
+        <!--FOOTER-->  
+      <footer>
+          <p>Desenvolvido por Thalissa Kezia</p>
+          <span>
+            <a href="https://www.linkedin.com/in/kezia-silva/" target="_blank">
+              <img class="linkedin-icon" src="assets/img/linkedin.svg" alt="Icone do Linkedin">
+            </a>
+          </span>
+          <span>
+            <a href="https://github.com/thalissakezia" target="_blank">
+              <img class="github-icon" src="assets/img/github.svg" alt="Icone do GitHub">
+            </a>
+          </span>
+      </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    
+  </body>
 </html>
